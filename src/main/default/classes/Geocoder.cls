@@ -9,8 +9,8 @@ public class Geocoder {
 
         // Parse and populate a list of strategy names (GoogleMaps, MapQuest)
         List<String> strategyNames = new List<String>();
-        if (settings != null && settings.value__c != null) {
-            String[] names = settings.value__c.split(',');
+        if (settings != null && settings.Value__c != null) {
+            String[] names = settings.Value__c.split(',');
             for (String name : names) {
                 name = name.trim();
                 if (name.length() > 0) {
