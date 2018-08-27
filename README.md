@@ -3,8 +3,14 @@
 This repository demonstrate the **strategy** design pattern implemented in Apex.
 
 The example exposes a `Geocoder` search engine that returns the coordinate of a location.
-The service can use different strategies to retrieve the result: we provide mocks for GoogleMaps or MapQuest.
-The available strategies are defined in a `My_Settings__c` custom settings list.
+
+```apex
+Geocoder geocoder = new Geocoder('GoogleMaps');
+Double[] location = geocoder.getLatLong('Moscone Center'); //=> [37.7845935,-122.3994262]
+```
+
+The service can use different strategies to retrieve the result. We provide mock implementations for GoogleMaps or MapQuest.
+The available strategies are defined as a comma delimited list in a `My_Settings__c` custom settings list.
 
 Check out the `GeocoderTest` test class to see how to use the service.
 
