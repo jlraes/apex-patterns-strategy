@@ -1,6 +1,6 @@
 # Apex Design Patterns: Strategy
 
-This repository demonstrate the **strategy** design pattern implemented in Apex.
+This repository demonstrates the [strategy design pattern](https://en.wikipedia.org/wiki/Strategy_pattern) implemented in the Apex programming language.
 
 The example exposes a `Geocoder` search engine that returns the coordinate of a location.
 
